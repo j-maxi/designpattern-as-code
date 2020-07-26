@@ -26,10 +26,10 @@ DesignPattern: close({
 		kubernetes: [string]: #KubernetesSpec
 	}
 
-  // Tekton tasks: 3 stages for now
-  tasks: {
-    build: [string]: tekton.#PipelineTask
-    deploy: [string]: tekton.#PipelineTask
-    check: [string]: tekton.#PipelineTask
-  }
+	// Tekton tasks: 3 stages for now
+	tasks: {
+		build: [string]:  tekton.#PipelineTask
+		deploy: [string]: tekton.#PipelineTask
+		check: [string]:  tekton.#PipelineTask
+	}
 })
