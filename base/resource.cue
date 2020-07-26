@@ -24,7 +24,7 @@ DesignPattern: close({
 	// resource declaration
 	resources: {
 		kubernetes: [string]: #KubernetesSpec
-    gcp: [string]: _
+		gcp: [string]:        _
 	}
 
 	// Tekton tasks: 3 stages for now
