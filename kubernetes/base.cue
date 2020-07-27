@@ -370,6 +370,14 @@ DeploySpec: {
 			workingDir: "/workspace/designpatterns"
 		},
 		{
+			name:  "confirm-manifest"
+			image: "busybox:1.31.1"
+			command: ["cat"]
+			args: [
+				"kubernetesManifests.yaml",
+			]
+		},
+		{
 			name:  "deploy"
 			image: "google/cloud-sdk:278.0.0"
 			command: ["kubectl"]
