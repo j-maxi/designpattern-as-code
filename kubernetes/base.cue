@@ -52,7 +52,7 @@ DesignPattern: {
 	// basic spec
 	resources: kubernetes: deployment: spec: {
 		replicas: 3
-		selector: matchLabels: app: parameters.appName
+                selector: matchLabels: app: parameters.appName
 		template: {
 			metadata: labels: app: parameters.appName
 			spec: containers: [
@@ -368,6 +368,14 @@ DeploySpec: {
 				"--outfile=/workspace/kubernetesManifests.yaml",
 			]
 			workingDir: "/workspace/designpatterns"
+		},
+		{
+			name:  "confirm-manifest"
+			image: "busybox:1.31.1"
+			command: ["cat"]
+			args: [
+				"kubernetesManifests.yaml",
+			]
 		},
 		{
 			name:  "deploy"
