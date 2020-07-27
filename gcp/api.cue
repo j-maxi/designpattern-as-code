@@ -9,7 +9,7 @@ import (
 	"github.com/j-maxi/designpattern-as-code/base:resource"
 )
 
-#exposePort: 8080
+#exposePort: 5000
 
 #Service: {
 	corev1.#Service
