@@ -113,7 +113,7 @@ DesignPattern: {
 			port: 80
 		}
 		timeout: "10s"
-		period:  "300s"
+		period:  "60s"
 	}
 
 	tasks: check: uptime: {
