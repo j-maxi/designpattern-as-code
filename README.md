@@ -4,7 +4,7 @@ A demo code of Design Pattern as Code shown in KubeCon 2020 EU Virtual.
 
 See https://github.com/j-maxi/simple-app for an instruction to use these patterns.
 
-**This repository is moved to https://github.com/nttcom/designpattern-as-code-demo. See the repo for the latest code.
+**This repository is moved to https://github.com/nttcom/designpattern-as-code-demo. See the repo for the latest code.**
 
 ## Dependencies
 
